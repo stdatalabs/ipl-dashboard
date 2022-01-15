@@ -30,6 +30,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
                 .city(matchInput.getCity())
                 .date(LocalDate.parse(matchInput.getDate()))
                 .playerOfMatch(matchInput.getPlayer_of_match())
+                .venue(matchInput.getVenue())
                 .team1(firstInningsTeam)
                 .team2(secondInningsTeam)
                 .tossWinner(matchInput.getToss_winner())
